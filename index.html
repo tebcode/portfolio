@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Tebcode | All About Web Technologies</title>
+	<meta name="keywords" content="tebcode , web developers , creative designers , front-end developers , tebcode website , creative developers">
+	<meta name="description" content="Tebcode is a small team of Web Developers and Designers based in Karachi, Pakistan.
+	Tebcode's Developers are specialised in JavaScript , JQuery , HTML5 , CSS3 , SQL and Adobe Photoshop.
+	Tebcode also provides tutorials on YouTube for beginner developers who want to learn new things and
+	are trying to hold a strong grip in the field of Web and Software Technologies.">
+	<meta name="author" content="Hasnain Karim">
+	<meta name="viewport" content="width=device-width , initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="src/css/index.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="src/css/bootstrap.min.css">
+	<link rel="icon" href ="src/images/tebcode--logo.png">
+	<script src="src/js/typed.js"></script>
+</head>
+<body>
+
+<!-- alert modal -->
+
+<div class="alert--modal alert--modal--hide">
+	<span id="alert--text"></span>
+</div>
+
+
+<!-- nav-menu toggler -->
+<div class="nav-toggler nav-toggler-color--true" onclick="navToggle(document.getElementsByClassName('nav-slide-false'))">
+	<div class="nav-content">
+		menu
+	</div>
+	<div class="nav-slide-false" >
+		<div class="nav-hamburger">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+		</div>
+	</div>
+</div>
+
+<!-- navigation bar -->
+
+<nav>
+	<div class="nav-links">
+		<ul class="nav-sec sec1">
+			<li><a href="javascript:void(0)" onclick="hireUs() , navToggle(document.getElementsByClassName('nav-slide-false'))">hire us</a></li>
+		</ul>
+		<ul class="nav-sec sec2">
+			<li><a class="nav-link" href="#about--us" onclick="navToggle(document.getElementsByClassName('nav-slide-false'))">about us</a></li>
+			<li><a class="nav-link" href="#our--features" onclick="navToggle(document.getElementsByClassName('nav-slide-false'))">our features</a></li>
+			<li><a class="nav-link" href="#our--services" onclick="navToggle(document.getElementsByClassName('nav-slide-false'))">services we provide</a></li>
+			<li><a class="nav-link" href="#our--team" onclick="navToggle(document.getElementsByClassName('nav-slide-false'))">tebcode team</a></li>
+		</ul>
+		<ul class="nav-sec sec3">
+			<li><a class="nav-link" href="#our--pricing" onclick="navToggle(document.getElementsByClassName('nav-slide-false'))">pricing</a></li>
+			<li><a class="nav-link" href="#recent--projects" onclick="navToggle(document.getElementsByClassName('nav-slide-false'))">recent projects</a></li>
+			<li><a class="nav-link" href="#happy--clients" onclick="navToggle(document.getElementsByClassName('nav-slide-false'))">our happy clients</a></li>
+			<li><a class="nav-link" href="#youtube--section" onclick="navToggle(document.getElementsByClassName('nav-slide-false'))">video tutorials</a></li>
+			<li><a class="nav-link" href="#form--area" onclick="navToggle(document.getElementsByClassName('nav-slide-false'))">contact us</a></li>
+		</ul>
+		<ul class="nav-sec sec4">
+			<li>
+				<a href="https://www.youtube.com/channel/UCPv9hhY21a2B06eI_iUtqag"><i class="fa fa-youtube-play fa-2x"></i></a>
+				<a href="https://www.facebook.com/tebcode"><i class="fa fa-facebook fa-2x"></i></a>
+				<a href="https://www.twitter.com/tebcode"><i class="fa fa-twitter fa-2x"></i></a>
+				<a href="https://www.codepen.io/tebcode"><i class="fa fa-codepen fa-2x"></i></a>
+				<a href="https://www.github.com/tebcode"><i class="fa fa-github fa-2x"></i></a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+<!-- Header -->
+
+<header class="intro-bg" id="background-area">
+	<a href="index.html"><img src="src/images/tebcode--logo.png" alt="tebcode logo" title="Tebcode Logo" class="logo"/></a>
+	<h1><span class="code">Animated Text from typed.js</span></h1>
+	<div class="intro-bg-overlay" id="background-picture"></div>
+</header>
+
+
+<!-- about us / who we are / about tebcode -->
+
+<section class="about" id="about--us">
+	<div class="container">
+		<div class="row about-row">
+			<div class="col-xs-12 col-md-6 about-content-container">
+				<div class="about-pic"></div>
+			</div>
+			<div class="col-xs-12 col-md-6 about-content-container">
+				<div class="about-text-content">
+					<h1>about <span class="heading-color">tebcode</span> </h1>		
+
+					<p>We are a small team of Web Developers and Designers based in Karachi, Pakistan.</p> <br/>
+					<p>Indeed our team is small but we are Hardworking , Creative and  Passionate about Web Developing. We are  
+					specialised in JavaScript , JQuery , HTML5 , CSS3 , Bootstrap ( the famous framework for Front-end Developing ) and SQL.
+					We also use Adobe Photoshop in our work.</p> <br/>
+					<p>We also make Tutorials on YouTube for beginner developers who wants to learn new things
+					and are trying to hold a strong grip in the field of Web Technologies.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="featured-quote">
+	<h1>Design is a plan for arranging elements in such a way as best to accomplish a particular purpose.</h1>
+	<span class="section-tip"></span>
+	</div>
+</section>
+
+
+<!-- our features -->
+
+<section class="our-features" id="our--features">
+	<h1>our <span class="heading-color">features</span> </h1>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-lg-4 ft-content-container">
+				<div class="ft-box">
+					<div class="ft-content-box">
+						<div class="ft-icon-box-container">
+							<div class="ft-icon-box-inner-container">
+								<div class="ft-icon">
+									<i class="fa fa-lightbulb-o fa-2x"></i>
+								</div>
+							</div>
+						</div>
+						<div class="ft-text-container">
+							<div class="ft-text">
+								<h3>creative design</h3>
+								<p>We are not like those developers who use the same design in all their work Indeed
+								we create a beautiful design that suits your business.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-lg-4 ft-content-container">
+				<div class="ft-box">
+					<div class="ft-content-box">
+						<div class="ft-icon-box-container">
+							<div class="ft-icon-box-inner-container">
+								<div class="ft-icon">
+									<i class="fa fa-laptop fa-2x"></i>
+								</div>
+							</div>
+						</div>
+						<div class="ft-text-container">
+							<div class="ft-text">
+								<h3>ultra responsive</h3>
+								<p>Our developed websites looks great on any device, big or small with beautiful UI. 
+								They dont depend on screen-size. </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-lg-4 ft-content-container">
+				<div class="ft-box">
+					<div class="ft-content-box">
+						<div class="ft-icon-box-container">
+							<div class="ft-icon-box-inner-container">
+								<div class="ft-icon">
+									<i class="fa fa-code fa-2x"></i>
+								</div>
+							</div>
+						</div>
+						<div class="ft-text-container">
+							<div class="ft-text">
+								<h3>clean code</h3>
+								<p>Besides effective and Creative web developement, we make sure that our code is clean
+								so that it can be used later.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-lg-4 ft-content-container">
+				<div class="ft-box">
+					<div class="ft-content-box">
+						<div class="ft-icon-box-container">
+							<div class="ft-icon-box-inner-container">
+								<div class="ft-icon">
+									<i class="fa fa-rocket fa-2x"></i>
+								</div>
+							</div>
+						</div>
+						<div class="ft-text-container">
+							<div class="ft-text">
+								<h3>fast load</h3>
+								<p>A website with rich graphics contents looks great but if it doesn't load fast then its worth is zero.
+								Therfore we make sure that your web load fast.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>			
+			<div class="col-xs-12 col-sm-6 col-lg-4 ft-content-container">
+				<div class="ft-box">
+					<div class="ft-content-box">
+						<div class="ft-icon-box-container">
+							<div class="ft-icon-box-inner-container">
+								<div class="ft-icon">
+									<i class="fa fa-globe fa-2x"></i>
+								</div>
+							</div>
+						</div>
+						<div class="ft-text-container">
+							<div class="ft-text">
+								<h3>w3C standards</h3>
+								<p>We follow the W3C Standards in developing a website, which makes the site easier to manage ,
+								more accessible and better for Search Engines.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>			
+			<div class="col-xs-12 col-sm-6 col-lg-4 ft-content-container">
+				<div class="ft-box">
+					<div class="ft-content-box">
+						<div class="ft-icon-box-container">
+							<div class="ft-icon-box-inner-container">
+								<div class="ft-icon">
+									<i class="fa fa-server fa-2x"></i>
+								</div>
+							</div>
+						</div>
+						<div class="ft-text-container">
+							<div class="ft-text">
+								<h3>reliable hosting</h3>
+								<p>Your Website is important and reliable web hosting protects your investment. We give every effort to ensure that your Website remains active 365 days of year.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>			
+
+		</div>
+	</div>
+</section>
+
+
+
+<!-- OUR SERVICES -->
+
+
+<section class="our-services" id="our--services">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-6 services-content-container">
+				<div class="services-details">
+					<h1>our services</h1>
+					<p>Our services are less in count but they are awesome. We deliver our services not just to satisfy our customers
+					but to make our customers loved with the service we provided. </p>
+					<div class="row ser-body">
+						<div class="col-xs-12 col-sm-4 ser-icon-container-outer">
+							<div class="col-xs-6 col-sm-12 ser-icon-container-inner">
+								<div class="ser-icon ser-icon-active" onclick="servicesContentToggle(event)">
+									<i class="fa fa-desktop fa-4x"></i>
+								</div>
+							</div>
+							<div class="col-xs-6 col-sm-12 ser-icon-container-inner">
+								<div class="ser-icon" onclick="servicesContentToggle(event)">
+									<i class="fa fa-youtube-play fa-4x"></i>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-8 ser-detail-content">
+							<h3 id="ser-head">Web development</h3>
+							<p id="ser-para">From a simple portfolio Website to a complex eCommerce or Content Managed System, 
+							we offers the complete front-end website solutions.</p>
+						</div>
+					</div>
+					<div class="service-mobile-size-content">
+					<div class="col-xs-12 ft-content-container">
+						<div class="ft-box">
+							<div class="ft-content-box">
+								<div class="ft-icon-box-container">
+									<div class="ft-icon-box-inner-container">
+										<div class="ft-icon">
+											<i class="fa fa-desktop fa-2x"></i>
+										</div>
+									</div>
+								</div>
+								<div class="ft-text-container">
+									<div class="ft-text">
+										<h3>web development</h3>
+										<p>From a simple portfolio Website to a complex eCommerce or Content Managed System, we offers 
+										the complete front-end website solutions.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 ft-content-container">
+						<div class="ft-box">
+							<div class="ft-content-box">
+								<div class="ft-icon-box-container">
+									<div class="ft-icon-box-inner-container">
+										<div class="ft-icon">
+											<i class="fa fa-youtube-play fa-2x"></i>
+										</div>
+									</div>
+								</div>
+								<div class="ft-text-container">
+									<div class="ft-text">
+										<h3>Youtube tutorials</h3>
+										<p>We make tutorials on Youtube for beginner developers, who are trying to hold a strong grip in the
+										field of Web & Software Development.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6  services-content-container ser-pic-container">
+				<div class="services-pic">
+					<div class="objects-pic">
+						<img src="src/images/vase.png" id="vase-pic" class="img-responsive" alt="vase" />	
+						<img src="src/images/camera.png" id="camera-pic" class="img-responsive" alt="camera" />
+						<img src="src/images/laptop.png" id="laptop-pic" class="img-responsive" alt="laptop" />
+						<img src="src/images/headphone.png" id="headphone-pic" class="img-responsive" alt="headphone" />
+						<img src="src/images/glasses.png" id="glasses-pic" class="img-responsive" alt="glasses" />
+						<img src="src/images/juice.png" id="juice-pic" class="img-responsive" alt="juice" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<!-- OUR TEAM -->
+
+
+<section class="our-team" id="our--team">
+	<div class="container">
+		<div class="row">
+			<div id="team-container-one">
+				<div class="col-xs-12 col-md-7 team-content-container">
+					<div class="about-team-content">
+						<div class="team-text-content">
+							<h1>Meet the <span class="heading-color">tebcode team</span> </h1>
+							<p>Here is our tebcode team, auctually we are not just a team we are a family.
+							A family of Developers whose aim is to develope Creative and Effective Websites</p>
+
+							<div class="team-thumbnails-container">
+								<div class="col-xs-12 col-sm-6">
+									<div class="team-thumbnails" id="d1" onclick="devDetailShow(event)">
+										<div class="team-thumbnails-overlay">
+											<span class="dev-name">hasnain karim</span>
+											<span class="dev-role">founder & web developer</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-6">
+									<div class="team-thumbnails" id="d2" onclick="devDetailShow(event)">
+										<div class="team-thumbnails-overlay">
+											<span class="dev-name">naji ahmed</span>
+											<span class="dev-role">uI / uX web developer
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+				
+			<div id="team-container-two">
+				<div class="col-xs-12 col-md-5 team-content-container">
+					<div class="team-pic"></div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="featured-quote">
+		<h1>There are three responses to a piece of design – yes, no, and WOW! Wow is the one to aim for.</h1>
+		<span class="section-tip"></span>
+	</div>		
+
+</section>
+
+<!-- MODAL THAT SHOWS DEVELOPER DETAILS -->
+
+<div class="developer-modal">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 dev-pic--container" id="dev--picture"></div>
+			<div class="col-xs-12 col-sm-6 dev-detail--container" id="dev--detail">
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- Our pricings-->
+
+<section class="pricing" id="our--pricing">
+	<h1>our <span class="heading-color">pricing</span></h1>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-sm-6 col-xs-12 ft-content-container">
+				<div class="ft-box">
+					<div class="ft-content-box">
+						<div class="ft-icon-box-container">
+							<div class="ft-icon-box-inner-container">
+								<div class="ft-icon">
+									<i class="fa fa-star-o fa-2x"></i>
+								</div>
+							</div>
+						</div>
+						<div class="ft-text-container">
+							<div class="ft-text">
+								<h3>basic plan</h3>
+								<div class="plan--price-container">
+									<h1><span class="price">&dollar;15</span></h1>
+								</div>
+								<ul class="pricing--plan--ul">
+									<li><span class="pricing-plan-list-span">standard logo</span></li>
+									<li><span class="pricing-plan-list-span">effective design</span></li>
+									<li><span class="pricing-plan-list-span">responsive uI</span></li>
+									<li><span class="pricing-plan-list-span">SEO friendly</span></li>
+									<li><span class="pricing-plan-list-span">one page website</span></li>
+									<li><span class="pricing-plan-list-span li--domain">free domain with hosting <sup><strong><i class="fa fa-question-circle"></i></strong></sup>
+									
+									<span class="domain--popup">Subdomain would also be included in your web address.</span>
+									</span></li>
+								</ul>
+								<button class="bt" onclick="buttonEffect(this)" value="custom_submit1">
+									<span class="bt-text">
+										<span class="bt-content">Choose</span>
+									</span>
+									<span class="bt-icon">
+										<span class="bt-content">			
+											<i class="fa fa-paper-plane-o "></i>
+										</span>
+									</span>
+								</button>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-4 col-sm-6 col-xs-12 ft-content-container" id="scaled-box">
+				<div class="ft-box">
+					<div class="ft-content-box">
+						<div class="ft-icon-box-container">
+							<div class="ft-icon-box-inner-container">
+								<div class="ft-icon">
+									<i class="fa fa-gift fa-2x"></i>
+								</div>
+							</div>
+						</div>
+						<div class="ft-text-container">
+							<div class="ft-text">
+
+								<h3>standard plan</h3>
+								<div class="plan--price-container">
+									<h1><span class="price">&dollar;30</span></h1>
+								</div>
+								<ul class="pricing--plan--ul" >
+									<li><span class="pricing-plan-list-span">creative logo</span></li>
+									<li><span class="pricing-plan-list-span">eye catching design</span></li>
+									<li><span class="pricing-plan-list-span">responsive uI</span></li>
+									<li><span class="pricing-plan-list-span">SEO friendly</span></li>
+									<li><span class="pricing-plan-list-span">5-15 pages website</span></li>
+									<li><span class="pricing-plan-list-span li--domain">custom domain with hosting <sup><strong><i class="fa fa-question-circle"></i></strong></sup>
+									
+									<span class="domain--popup">Charges may differ according to the type of domain you choose.</span>
+									</span></li>
+								</ul>
+								
+								<button class="bt" onclick="buttonEffect(this)" value="custom_submit2">
+									<span class="bt-text">
+										<span class="bt-content">Choose</span>
+									</span>
+									<span class="bt-icon">
+										<span class="bt-content">			
+											<i class="fa fa-paper-plane-o "></i>
+										</span>
+									</span>
+								</button>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-6 col-xs-12 ft-content-container">
+				<div class="ft-box">
+					<div class="ft-content-box">
+						<div class="ft-icon-box-container">
+							<div class="ft-icon-box-inner-container">
+								<div class="ft-icon">
+									<i class="fa fa-pencil fa-2x"></i>
+								</div>
+							</div>
+						</div>
+						<div class="ft-text-container">
+							<div class="ft-text">
+								<h3>customized plan</h3>
+								<div class="plan--price-container">
+									<h1><span class="price" id="cstm-price">&dollar;15</span></h1>
+									<span class="restore--default" onclick="defaultPrice()"><i class="fa fa-repeat"></i></span>
+								</div>
+
+								<ul id="custom--plan--ul" class="pricing--plan--ul">
+									<li><span class="pricing-plan-list-span">standard logo</span></li>
+									<li><span class="pricing-plan-list-span">effective design</span></li>
+									<li><span class="pricing-plan-list-span">responsive uI</span></li>
+									<li><span class="pricing-plan-list-span">SEO friendly</span></li>
+									<li><span class="pricing-plan-list-span">one page website</span></li>
+									<li><span class="pricing-plan-list-span li--domain">free domain with hosting </span></li>
+								</ul>
+								
+								<button class="bt" onclick="buttonEffect(this)" value="customize" id="cstm-btn">
+									<span class="bt-text">
+										<span class="bt-content" id="cutom-btn-span">customize</span>
+									</span>
+									<span class="bt-icon">
+										<span class="bt-content">			
+											<i class="fa fa-paper-plane-o "></i>
+										</span>
+									</span>
+								</button>
+					
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- customized modal--> 
+
+<div class="pricing--modal--container pricing--modal--hide" onclick="modalEvents(event,this)">
+	<div class="pricing-modal --hide">
+		<div id="modal--close-toggle" onclick="pricingModalHide()"></div>
+		<h2>plan <span class="heading-color">customization</span></h2>
+		<p>Please choose which services are you willing to get done by us.</p>
+		<ol class="options--ol">
+			<li>Choose logo for your Website.</li>
+			<li class="option--container" onclick="option(event,this)">
+				<span class="option check">Standard logo</span>
+				<span class="option">Creative logo</span>
+			</li>
+			<li>Choose design for your Website.</li>
+			<li class="option--container" onclick="option(event,this)">
+				<span class="option">Simple Design</span>
+				<span class="option check">Creative & Effective Design</span>
+			</li>
+			<li>Do you want responsive UI for your Website?</li>
+			<li class="option--container" onclick="option(event,this)">
+				<span class="option check">Responsive UI</span>
+				<span class="option">No need of Responsive UI</span>
+			</li>
+			<li>Do you want your Website to be SEO Friendly?</li>
+			<li class="option--container" onclick="option(event,this)">
+				<span class="option check">SEO Friendly</span>
+				<span class="option">No need to be SEO Friendly</span>
+			</li>
+			<li>Please enter the length of webpage you need.</li>
+			<li class="option--container">
+				<input type="number" placeholder="Enter length..." id="pageLength"/>
+			</li>
+			<li>Choose Domain and hosting plan. </li>
+			<li class="option--container" onclick="option(event,this)">
+				<span class="option">Free Domain with hosting</span>
+				<span class="option check">Custom Domain with Hosting</span>
+			</li>
+		</ol>
+		<button class="bt" onclick="buttonEffect(this)" value="customButtonSubmit">
+			<span class="bt-text">
+				<span class="bt-content">submit</span>
+			</span>
+			<span class="bt-icon">
+				<span class="bt-content">			
+					<i class="fa fa-paper-plane-o "></i>
+				</span>
+			</span>
+		</button>	
+
+	</div>
+</div>
+
+<!-- recent projects -->
+
+<section class="project-section" id="recent--projects">
+	<h1>recent projects</h1>
+	<span class="section-tip"></span>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-xs-12 project--col--container">
+
+				<img src="src/images/project--trimgym.png" alt="Project TrimGym"
+				 class="img-responsive project--img
+				 project--img--visible--true"/>
+
+				<img src="src/images/project--tangoline.png" alt="Project TangoLine"
+				class="img-responsive project--img
+				"/>
+
+				<img src="src/images/project--comingsoon.png" alt="Coming Soon Project"
+				class="img-responsive project--img 
+				" />
+				
+			</div>
+			<div class="col-md-6 col-xs-12 project--col--container">
+				<div class="project--detail project--visible--true">
+					<h2>trimGym</h2>
+					<p>TrimGym is a 35 years old gym. To reach more customers they've decided to make a website from us.</p>
+					<h3>services provided</h3>
+					<ul>
+						<li><span class="project-list-span">logo designing</span></li>
+						<li><span class="project-list-span">responsive uI</span></li>
+						<li><span class="project-list-span">web development</span></li>
+					</ul>
+				</div>
+				
+				<div class="project--detail">
+					<h2>tangoLine</h2>
+					<p>TangoLine inc. is selling video games & consoles etc. Due to rapid development in internet, they've decided to launch a website.</p>
+					<h3>services provided</h3>
+					<ul>
+						<li><span class="project-list-span">logo designing</span></li>
+						<li><span class="project-list-span">responsive e-commerce uI</span></li>
+						<li><span class="project-list-span">web development</span></li>
+					</ul>
+				</div>
+
+				<div class="project--detail">
+					<h2>Coming Soon</h2>
+					<p>We are really sorry but we are trying our best to post this  Project as soon as possible.</p>
+					<h3>Services provided</h3>
+					<ul>
+						<li><span class="project-list-span">logo designing</span></li>
+						<li><span class="project-list-span">Creative portfolio ui</span></li>
+						<li><span class="project-list-span">web development</span></li>
+					</ul>
+				</div>
+
+
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="toggle--container" onclick="projectToggler(document.getElementsByClassName('toggle--container') , event, 
+				document.getElementsByClassName('project--detail'),document.getElementsByClassName('project--img')) ">
+					<span class="toggle--button active--project--toggle"></span>
+					<span class="toggle--button"></span>
+					<span class="toggle--button"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<!-- Our Happy Clients -->
+
+
+<section class="our--clients" id="happy--clients">
+	<div class="clients--bg--overlay"></div>
+	<div class="clients--text--outer--container">
+		<h1>our happy clients</h1>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 clients--col--outer--container">
+					<div class="clients--col--inner--container">
+						<div class="client--pic--container">
+							<div class="client--pic"></div>
+						</div>
+						<div class="client--message--container">
+							<h3>emma charlotte</h3>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-6 clients--col--outer--container">
+					<div class="clients--col--inner--container">
+						<div class="client--pic--container">
+							<div class="client--pic"></div>
+						</div>
+						<div class="client--message--container">
+							<h3>isabella ava</h3>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-6 clients--col--outer--container">
+					<div class="clients--col--inner--container">
+						<div class="client--pic--container">
+							<div class="client--pic"></div>
+						</div>
+						<div class="client--message--container">
+							<h3>ameilia madison</h3>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-6 clients--col--outer--container">
+					<div class="clients--col--inner--container">
+						<div class="client--pic--container">
+							<div class="client--pic"></div>
+						</div>
+						<div class="client--message--container">
+							<h3>sofia grace</h3>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-6 clients--col--outer--container">
+					<div class="clients--col--inner--container">
+						<div class="client--pic--container">
+							<div class="client--pic"></div>
+						</div>
+						<div class="client--message--container">
+							<h3>layla martin</h3>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-6 clients--col--outer--container">
+					<div class="clients--col--inner--container">
+						<div class="client--pic--container">
+							<div class="client--pic"></div>
+						</div>
+						<div class="client--message--container">
+							<h3>hannah allison</h3>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- new from youtube / video tutorials -->
+
+<section class="youtube" id="youtube--section">
+	<h1>new from our <span class="heading-color">youtube channel</span></h1>
+
+	<div class="slider--nav">
+		<button id="prev" onclick="moveSlider(event)"><i class="fa fa-chevron-left"></i></button>
+		<button id="next" onclick="moveSlider(event)"><i class="fa fa-chevron-right"></i></button>
+	</div>
+
+	<div class="slider--container" id="box--slider">
+		
+		<a href="https://www.youtube.com/watch?v=4kNcCuHHU5U&list=PLg3whmsZGD1_NUM12jukQsdEIbrgpjKkB">
+			<div class="slider--box">
+				<div class="box--title"></div>
+				<div class="box--body">
+					<h3>google map API</h3>
+					<p>JavaScript Tutorial</p>
+				</div>
+			</div>
+		</a>
+
+		<a href="https://youtu.be/Pe3kiY94DnM">
+			<div class="slider--box">
+				<div class="box--title"></div>
+				<div class="box--body">
+					<h3>Smooth scroll by CSS</h3>
+					<p>CSS Tutorial</p>
+				</div>
+			</div>
+		</a>
+
+		<a href="https://youtu.be/lOcZWcZKmVw">
+			<div class="slider--box">
+				<div class="box--title"></div>
+				<div class="box--body">
+					<h3>close shape</h3>
+					<p>CSS Tutorial</p>
+				</div>
+			</div>
+		</a>
+
+		<a href="https://www.youtube.com/watch?v=ob-lZamqM_8&list=PLg3whmsZGD19oJge-PwOF9lJPjypHJT5s">
+			<div class="slider--box">
+				<div class="box--title"></div>
+				<div class="box--body">
+					<h3>copy to clipboard</h3>
+					<p>JavaScript Tutorial</p>
+				</div>
+			</div>
+		</a>
+
+		<a href="https://youtu.be/GLE5GaXX048">
+			<div class="slider--box">
+				<div class="box--title"></div>
+				<div class="box--body">
+					<h3>new year's wish</h3>
+					<p>JavaScript Tutorial</p>
+				</div>
+			</div>
+		</a>
+
+		<a href="https://youtu.be/XWK3gIhPqnw">
+			<div class="slider--box">
+				<div class="box--title"></div>
+				<div class="box--body">
+					<h3>f5 key disabled</h3>
+					<p>JavaScript Tutorial</p>
+				</div>
+			</div>
+		</a>
+
+		<a href="https://youtu.be/s4u6OpmtMUY">
+			<div class="slider--box">
+				<div class="box--title"></div>
+				<div class="box--body">
+					<h3>animated mouse wheel</h3>
+					<p>CSS Tutorial</p>
+				</div>
+			</div>
+		</a>
+
+		<a href="https://youtu.be/OmLUeQNcvfg">
+			<div class="slider--box">
+				<div class="box--title"></div>
+				<div class="box--body">
+					<h3>heart shape</h3>
+					<p>CSS Tutorial</p>
+				</div>
+			</div>
+		</a>
+
+		<a href="https://youtu.be/doEW9Pptj-o">
+			<div class="slider--box">
+				<div class="box--title"></div>
+				<div class="box--body">
+					<h3>hamburger shape</h3>
+					<p>CSS Tutorial</p>
+				</div>
+			</div>
+		</a>
+
+		<a href="https://youtu.be/XzqFedTyocU">
+			<div class="slider--box">
+				<div class="box--title"></div>
+				<div class="box--body">
+					<h3>animated clock</h3>
+					<p>CSS Tutorial</p>
+				</div>
+			</div>
+		</a>
+
+
+	</div>
+
+
+</section>
+<div class="featured-quote">
+	<h1>None of us, ever do great things. But we can all do small things, with great love, and together we can do something wonderful.</h1>
+	<span class="section-tip"></span>
+</div>		
+
+
+
+<!-- CONTACT US -->
+
+<section class="contact--us" id="form--area">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-xs-12 contact--col--container">
+				<div class="contact--title--container">
+					<h2><span class="heading-color">reach out</span> with any question you have</h2>
+					<p>Call / WhatsApp us directly</p>
+					<p class="p--heading--like">+923 212 789 262</p> <br/>	
+					<p>Contact email</p>
+					<p class="p--heading--like">tebcode@outlook.com</p>
+				</div>
+			</div>
+			<div class="col-md-8 col-xs-12 contact--col--container">
+				<div class="contact--form--container" >
+					<h2>get in <span class="heading-color">touch with us</span> </h2>
+					<form>
+						<div class="form--input--panel">
+							<input type="text"	placeholder="Enter your name.." required id="form--name"/>
+						</div>
+						<div class="form--input--panel">
+							<input type="email" placeholder="Enter your email" required id="form--email"/>
+						</div>
+						<div class="form--message--container">
+							<textarea placeholder="Enter your message..." id="form--message"></textarea>
+						</div>
+						<button class="bt" onclick="buttonEffect(this), UserFormSubmit(event)" value="contact_submit" type="button">
+							<span class="bt-text">
+								<span class="bt-content">submit</span>
+							</span>
+							<span class="bt-icon">
+								<span class="bt-content">			
+									<i class="fa fa-paper-plane-o "></i>
+								</span>
+							</span>
+						</button>
+					</form>	
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- footer -->
+
+<footer class="footer">
+	<div id="b2t" onclick="documentTop()">
+		<i class="fa fa-angle-double-up fa-2x"></i>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-sm-4 footer--col">
+				<div class="footer--content">
+					<a href="index.html"><img src="src/images/tebcode--logo.png" alt="tebcode logo" title="tebcode logo" class="logo"/></a>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 footer--col">
+				<div class="footer--content">
+					<p>Coded with <i class="fa fa-heart-o fa-lg"></i> by <a href="https://www.facebook.com/hasnainkarim262">Hasnan Karim</a></p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 footer--col">
+				<div class="footer--content">
+					<a href="https://www.facebook.com/tebcode"><i class="fa fa-facebook fa-2x"></i></a>
+					<a href="https://www.twitter.com/tebcode"><i class="fa fa-twitter fa-2x"></i></a>
+					<a href="https://www.youtube.com/channel/UCPv9hhY21a2B06eI_iUtqag"><i class="fa fa-youtube-play fa-2x"></i></a>
+					<a href="https://www.codepen.io/tebcode"><i class="fa fa-codepen fa-2x"></i></a>
+					<a href="https://www.github.com/tebcode"><i class="fa fa-github fa-2x"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script src="src/js/index.js"></script>
+</body>
+</html>
