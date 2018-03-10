@@ -2,6 +2,21 @@
     Coded with <3 by @h26k2
 */
 
+/* ===== Pre-Loader ( thanks @tobiasahlin for this wonderful loader ) ===== */
+
+var loader = document.getElementsByClassName("sk-circle")[0];
+
+
+function preloader(){
+	loader.classList.toggle("hide--loader");
+	document.body.style.overflow="auto";
+}
+
+window.onload=function(){
+	setTimeout(preloader,2000);
+}
+
+
 /* ===== Hire Us ===== */
 
 function hireUs(){
@@ -62,13 +77,12 @@ bgContainer.addEventListener("mousemove",moveBackground);
 document.getElementsByClassName("code")[0].innerHTML = "";
 
 var typed = new Typed('.code', {
-  strings: ["We Code HTML", "We Code CSS", "We Code JavaScript", "We Code jQuery", "We Code Java", "We are tebCode!^5000"],
+  strings: ["We Code ","We Code HTML", "We Code CSS", "We Code JavaScript", "We Code jQuery", "We Code Java", "We are tebCode!^5000"],
   typeSpeed: 100,
   showCursor: false,
   backSpeed: 100,
-  loop:true,
-  loopCount:10,
-  StartDelay:100
+  loop:false,
+  StartDelay:1400
 });
 
 
